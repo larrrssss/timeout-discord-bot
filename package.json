@@ -1,0 +1,29 @@
+{
+  "name": "timeout",
+  "version": "1.0.0",
+  "description": "The best way to use Discord timeouts",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "npm run build && node dist/index.js",
+    "build": "tsc",
+    "tasks:commands:register": "ts-node --files src/tasks/commands/register.ts",
+    "tasks:commands:unregister": "ts-node --files src/tasks/commands/unregister.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "colors": "^1.4.0",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@discordjs/rest": "^0.3.0",
+    "eslint": "^8.11.0",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  }
+}
